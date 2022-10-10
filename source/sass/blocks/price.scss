@@ -1,0 +1,23 @@
+.price {
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 280px;
+}
+
+.price__title {
+    @include radio-text;
+    font-weight: 600;
+    padding: 20.65px 0 0 0;
+}
+
+@media (min-width: $tablet-width) {
+    .price {
+        width: 220px;
+        margin-right: 21px;
+    }
+
+    .price__title {
+        padding: 0;
+    }
+}

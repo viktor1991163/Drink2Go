@@ -1,0 +1,128 @@
+.product__list {
+    @include reset-styles;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__item {
+    margin-bottom: 20px;
+    background-color: $base-white;
+    padding: 0 20px;
+    width: 280px;
+}
+
+.product__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.product__img {
+    margin-top: 40px;
+}
+
+.product__title {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 700;
+    font-family: $Montserrat;
+    color: $base-black;
+    text-align: left;
+    margin: 20px 0 0 0;
+    align-self: flex-start;
+}
+
+.product__info {
+    @include main-text;
+    text-align: left;
+    margin: 0;
+    padding: 4px 0 0 0;
+}
+
+.product__price {
+    @include price-new;
+}
+
+.product__price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0 20px 0;
+}
+
+.product__basket {
+    @include main-text;
+    @include button-styles;
+    width: 141px;
+    padding: 8px 20px 8px 46px;
+    color: $base-white;
+    background-color: $base-primary;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-image: url(../img/main/main-basket.svg);
+    background-position: 20px;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+    .product {
+        padding: 30px 0 50px 0;
+    }
+
+    .product__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .product__item {
+        width: 349px;
+        margin-bottom: 0;
+        padding: 0 30px;
+    }
+
+    .product__title {
+        @include mobile-subtitle;
+        margin-top: 30px;
+    }
+
+    .product__img {
+        margin-top: 46px;
+    }
+
+    .product__info {
+        padding: 10px 0 0 0;
+    }
+
+    .product__price-container {
+        margin: 20px 0 30px 0;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .product {
+        width: 1011px;
+    }
+
+    .product__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    .product__item {
+        width: 317px;
+    }
+
+    .product__img {
+        margin-top: 50px;
+    }
+
+    .product__title {
+        margin-top: 26px;
+    }
+}

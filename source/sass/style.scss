@@ -1,0 +1,49 @@
+// переменные
+
+@import "./supporting/variables.scss";
+
+// шрифты
+
+@import "./supporting/font-face.scss";
+
+// hidden
+
+@import "./supporting/visually-hidden.scss";
+
+
+@import "./blocks/page.scss";
+
+// header
+
+@import "./blocks/main-header.scss";
+@import "./blocks/main-logo.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/user-list.scss";
+
+// main
+
+@import "./blocks/promo.scss";
+@import "./blocks/slider-first.scss";
+@import "./blocks/slider-second.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/price.scss";
+@import "./blocks/range.scss";
+@import "./blocks/existence.scss";
+@import "./blocks/country.scss";
+@import "./blocks/button-wrapper.scss";
+@import "./blocks/product-wrapper.scss";
+@import "./blocks/sort.scss";
+@import "./blocks/product.scss";
+@import "./blocks/pagination.scss";
+@import "./blocks/map.scss";
+
+// footer
+
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/footer-nav.scss";
+@import "./blocks/media.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/copyright.scss";

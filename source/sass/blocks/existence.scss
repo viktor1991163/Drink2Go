@@ -1,0 +1,154 @@
+.existence {
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 280px;
+}
+
+.existence__title {
+    @include radio-text;
+    font-weight: 600;
+    margin: 26px 0 22px 0 ;
+}
+
+.existence__list {
+    @include reset-styles;
+}
+
+.existence__item {
+    @include radio-text;
+    margin-bottom: 21.45px;
+    display: flex;
+    align-items: center;
+}
+
+.existence__label {
+    display: flex;
+    cursor: pointer;
+}
+
+.existence__custom-radio {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border: 2px solid $base-grey;
+    background-color:  $base-white;
+    border-radius: 50%;
+}
+
+// checked
+
+.existence__input[type="radio"]:checked + .existence__custom-radio {
+    border-color: $base-primary;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 2px;
+        left: 2px;
+        border-radius: 50%;
+        background-color: $base-primary;
+    }
+}
+
+// hover
+
+.existence__input[type="radio"]:hover + .existence__custom-radio {
+    border-color: $primary-lighter;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 2px;
+        left: 2px;
+        border-radius: 50%;
+        
+        background-color: $primary-opacity;
+    }
+}
+
+// focus
+
+.existence__input[type="radio"]:focus-visible + .existence__custom-radio {
+    border-color: $primary-lighter;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 2px;
+        left: 2px;
+        border-radius: 50%;
+        
+        background-color: $primary-opacity;
+    }
+}
+
+// disabled
+
+.existence__input[type="radio"]:disabled + .existence__custom-radio {
+    border-color: $light-grey;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 2px;
+        left: 2px;
+        border-radius: 50%;
+        background-color: $light-grey;
+    }
+}
+
+// disabled checked
+
+.existence__input[type="radio"]:checked:disabled + .existence__custom-radio {
+    border-color: $light-grey;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 2px;
+        left: 2px;
+        border-radius: 50%;
+        background-color: $light-grey;
+    }
+}
+
+.existence__description {
+    padding-left: 10px; 
+}
+
+@media (min-width: $tablet-width) {
+    .existence {
+       width: 210px;
+       margin-right: 38.67px;
+    }
+
+    .existence__item {
+        margin-bottom: 20.45px;
+    }
+    
+    .existence__title {
+        margin: 0 0 20px 0;
+    }
+
+    .existence__description {
+        padding-left: 10px; 
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .existence {
+        margin-top: 30px;
+     }
+ 
+} 

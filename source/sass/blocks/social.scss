@@ -1,0 +1,108 @@
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+.social__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social__info {
+    display: none;
+}
+
+.social__list {
+    @include reset-styles;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social__item {
+    margin-left: 19px;
+}
+
+.social__link {
+    display: flex;
+    fill: $base-grey;
+    border-radius: 4px;
+
+    &:hover {
+        fill: $base-primary;
+        background-color: $base-secondary;
+    }
+
+    &:focus {
+        outline  : none;
+        fill: $base-primary;
+        background-color: $base-secondary;
+    }
+
+    &:active {
+        outline  : none;
+        fill: $base-primary;
+        background-color: $primary-opacity;
+    }
+
+    &--vkontakte {
+        padding: 10px;
+    }
+
+    &--pinterest {
+        padding: 9px;
+    }
+
+    &--ok {
+        padding: 10px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .social {
+        width: 718px;
+        margin: 42px 0 9px;
+        padding: 0;
+    }
+
+    .social__list {
+        margin-right: -10px;
+    }
+
+    .social__item {
+        margin-left: 19px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .social {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 318px;
+        
+    }
+
+    .social__logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .social__info {
+        @include main-text;
+        display: block;
+        padding-top: 5px;
+    }
+
+    .social__list {
+        margin: 50px 0 0 0;
+    }
+}

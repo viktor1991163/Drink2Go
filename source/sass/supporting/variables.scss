@@ -1,0 +1,155 @@
+// Colors
+
+$base-white: #ffffff;
+$base-grey: #bdbdbd;
+$base-black: #333333;
+$base-primary: #7859cf;
+$base-secondary: #f0ebff;
+
+// Alt Colors
+
+$primary-opacity: rgba(120, 89, 207, 0.25);
+$primary-lighter: #9070ec;
+$primary-darker: #593cac;
+$light-grey: #e2e2e2;
+
+// Background Colors
+
+$lightest-grey: #f8f8f8;
+$flat-white: #f3ebe1;
+$lavender-latte: #eae6fc;
+$espresso: #e5e6e8;
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;
+
+// Fonts
+
+$Montserrat: "Montserrat", 'Arial', sans-serif;
+
+// button
+
+@mixin button-styles {
+  &:hover {
+    background-color: $primary-lighter;
+    color: $base-white;
+  }
+  
+  &:focus {
+    background-color: $primary-lighter;
+    outline: none;
+    color: $base-white;
+  }
+  
+  &:active {
+    background-color: $primary-darker;
+    color: $base-white;
+  }
+  
+  &:disabled {
+    background-color: $light-grey;
+    color: $base-white;
+  }
+}
+
+// reset
+
+@mixin reset-styles {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+// stylization link
+
+@mixin stylization {
+    &:hover {
+      color: #9070ec;
+  }
+
+  &:focus {
+      color: #9070ec;
+      outline: none;
+  }
+
+  &:active {
+      color: #593cac;
+  }
+}
+
+// Mixin mobile
+
+@mixin header-text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Montserrat", 'Arial', sans-serif;
+  color: #333333;
+}
+
+@mixin title-text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", 'Arial', sans-serif;
+  color: #7859cf;
+}
+
+@mixin main-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  font-family: "Montserrat", 'Arial', sans-serif;
+  color: #333333;
+}
+
+@mixin price-old {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-family: "Montserrat", 'Arial', sans-serif;
+  color: #7859cf;
+}
+
+@mixin price-new {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  font-family: "Montserrat",'Arial', sans-serif;
+  color: #333333;
+}
+
+@mixin mobile-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  font-family: "Montserrat",'Arial', sans-serif;
+  color: #333333;
+}
+
+@mixin radio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Montserrat",'Arial', sans-serif;
+  color: #333333;
+}
+
+
+// Mixin tablet
+
+@mixin title-text-tablet {
+  font-size: 42px;
+  line-height: 64px;
+}
+
+// Mixin desktop
+

@@ -1,0 +1,13 @@
+@media (min-width: $tablet-width) {
+    .product-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .product-wrapper {
+        width: 1011px;
+        margin-left: 30px;
+    }
+}

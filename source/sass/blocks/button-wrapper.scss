@@ -1,0 +1,20 @@
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+    .button-wrapper {
+        width: 768px;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 27px;
+    }
+} 
+
+@media (min-width: $desktop-width) {
+    .button-wrapper {
+        width: 318px;
+        padding-bottom: 27px;
+    }
+}

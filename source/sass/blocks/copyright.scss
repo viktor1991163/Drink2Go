@@ -1,0 +1,51 @@
+.copyright {
+    border-top: 1px solid $base-secondary;
+}
+
+.copyright__text {
+    display: flex;
+    justify-content: center;
+    @include header-text;
+    color: #bdbdbd;
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+.copyright__link {
+    display: flex;
+    justify-content: space-between;
+    width: 112px;
+    text-decoration: none;
+    fill: $base-grey;
+    color: $base-grey;
+    padding-left: 3px;
+    @include stylization;
+
+        &:hover {
+            fill: $base-primary;
+        }
+
+        &:focus {
+            fill: $base-primary;
+        }
+
+        & :active {
+            fill: $primary-darker;
+        }
+}
+
+@media (min-width: $tablet-width) {
+    .copyright {
+        border: none;
+    }
+
+    .copyright__text {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .copyright__text {
+        margin-top: 0;
+    }
+}
